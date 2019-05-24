@@ -1,0 +1,117 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+};
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+};
+
+h1 {
+  text-align: center;
+}
+
+#app {
+  background-color: #fafafa;
+  min-height: 100%;
+  min-width: 100%;
+};
+
+p,
+label {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.5em;
+}
+
+#combobox {
+  margin: 0 auto;
+  width: 90%;
+  .ac__container {
+    display: flex;
+    flex-flow: wrap;
+    height: auto;
+    align-items: center;
+    border-bottom: 2px solid blue;
+    .ac__chip {
+      color: #565151;
+      background-color: #e0e0e0;
+      align-items: center;
+      margin: 5px;
+      border-radius: 16px;
+      cursor: default;
+      border: none;
+      display: inline-flex;
+      outline: none;
+      svg.remove {
+        cursor: pointer;
+      }
+      span {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      svg {
+        margin-left: 4px;
+        margin-right: 4px;
+        fill: currentColor;
+        width: 1em;
+        height: 1em;
+      }
+      img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+      }
+    }
+    .ac__input {
+      flex: 1;
+      position: relative;
+      input {
+        width: 100%;
+        border: 0;
+        margin: 0;
+        outline: none;
+        padding: 6px 0 7px
+      }
+    }
+  }
+  .ac__listcontainer {
+    position: absolute;
+    margin-top: 5px;
+    max-width: 500px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12);
+    ul {
+      padding: 0;
+      margin:5px 0 0 0;
+      background: white;
+      width: 100%;
+      list-style-type: none;
+      li {
+        display: flex;
+        padding: 10px;
+        cursor: pointer;
+        align-items: center;
+        .icon {
+          img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+          }
+        }
+        .name {
+          margin-left: 10px;
+        }
+        .email {
+          margin-left: 10px;
+        }
+        &.selected {
+          background: #f3f3f3;
+        }
+        &:hover {
+          background: #f3f3f3;
+        }
+      }
+    }
+  }
+}
